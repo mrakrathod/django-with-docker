@@ -118,3 +118,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'docker_db',
+        'USER': 'docker',
+        'PASSWORD': 'docker',
+        'HOST': 'db',
+        'PORT': 5432,
+    }
+}
+
